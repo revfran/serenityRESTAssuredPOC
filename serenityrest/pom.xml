@@ -73,6 +73,10 @@
                         <include>**/*Story.java</include>
                     </includes>
                     <argLine>-Xmx512m</argLine>
+                    <systemPropertyVariables>
+                        <weather.api.key>${weather.api.key}</weather.api.key>
+                        <weather.base.url>${weather.base.url}</weather.base.url>
+                    </systemPropertyVariables>
                 </configuration>
                 <executions>
                     <execution>

@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff8b0446-bb55-4e37-a447-b69c43eba555" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/CountriesSearchSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CountryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/WeatherTestSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WeatherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CountriesSearchSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CountryTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/CountryTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/WeatherTestSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            <state relative-caret-position="130">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,11 +48,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/countryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CountryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/CountriesSearchSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/CountryTest.java" />
+        <option value="$PROJECT_DIR$/serenity.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/WeatherTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/WeatherTestSteps.java" />
       </list>
     </option>
   </component>
@@ -118,8 +124,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,6 +163,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WeatherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="serenityrest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WeatherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherTest.testSearchByCityIdBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="serenityrest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WeatherTest" />
+      <option name="METHOD_NAME" value="testSearchByCityIdBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherTest.testSearchByCityNameBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="serenityrest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WeatherTest" />
+      <option name="METHOD_NAME" value="testSearchByCityNameBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherTest.testSearchByCoordinatesBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="serenityrest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WeatherTest" />
+      <option name="METHOD_NAME" value="testSearchByCoordinatesBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -167,7 +240,25 @@
     <configuration name="serenity-rest [clean,verify]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map>
+                <entry key="weather.api.key" value="b70cf56c6c37e1cecb9dce7af937259c" />
+                <entry key="weather.base.url" value="http://api.openweathermap.org/data/2.5/weather" />
+              </map>
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -209,10 +300,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.CountryTest.verifyThatWeCanFindUnitedStatesOfAmericaUsingTheCodeUS" />
+      <item itemvalue="JUnit.WeatherTest" />
       <item itemvalue="Maven.serenity-rest [clean,verify]" />
+      <item itemvalue="JUnit.WeatherTest.testSearchByCityNameBody" />
+      <item itemvalue="JUnit.WeatherTest.testSearchByCityIdBody" />
+      <item itemvalue="JUnit.WeatherTest.testSearchByCoordinatesBody" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WeatherTest.testSearchByCoordinatesBody" />
+        <item itemvalue="JUnit.WeatherTest.testSearchByCityIdBody" />
+        <item itemvalue="JUnit.WeatherTest" />
+        <item itemvalue="JUnit.WeatherTest.testSearchByCityNameBody" />
         <item itemvalue="JUnit.CountryTest.verifyThatWeCanFindUnitedStatesOfAmericaUsingTheCodeUS" />
       </list>
     </recent_temporary>
@@ -228,9 +327,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CountryTest_verifyThatWeCanFindUnitedStatesOfAmericaUsingTheCodeUS - 2019.02.10 at 21h 26m 53s.xml">
-      <configuration name="CountryTest.verifyThatWeCanFindUnitedStatesOfAmericaUsingTheCodeUS" configurationId="JUnit" />
+    <history-entry file="WeatherTest - 2019.02.10 at 23h 01m 05s.xml">
+      <configuration name="WeatherTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WeatherTest - 2019.02.10 at 23h 03m 47s.xml">
+      <configuration name="WeatherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest - 2019.02.10 at 23h 14m 41s.xml">
+      <configuration name="WeatherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest_testSearchByCityNameBody - 2019.02.10 at 23h 35m 01s.xml">
+      <configuration name="WeatherTest.testSearchByCityNameBody" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest_testSearchByCityNameBody - 2019.02.10 at 23h 37m 34s.xml">
+      <configuration name="WeatherTest.testSearchByCityNameBody" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest_testSearchByCityNameBody - 2019.02.10 at 23h 42m 42s.xml">
+      <configuration name="WeatherTest.testSearchByCityNameBody" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest - 2019.02.10 at 23h 54m 38s.xml">
+      <configuration name="WeatherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest_testSearchByCityIdBody - 2019.02.10 at 23h 55m 59s.xml">
+      <configuration name="WeatherTest.testSearchByCityIdBody" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest_testSearchByCityIdBody - 2019.02.10 at 23h 56m 39s.xml">
+      <configuration name="WeatherTest.testSearchByCityIdBody" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherTest_testSearchByCoordinatesBody - 2019.02.10 at 23h 57m 09s.xml">
+      <configuration name="WeatherTest.testSearchByCoordinatesBody" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1926" height="945" extended-state="6" />
@@ -239,19 +374,19 @@
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.2497332" />
-      <window_info id="Structure" order="1" sideWeight="0.50088185" side_tool="true" visible="true" weight="0.2497332" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7652439" visible="true" weight="0.2497332" />
+      <window_info id="Structure" order="1" sideWeight="0.2347561" side_tool="true" visible="true" weight="0.2497332" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3289941" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.3289941" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289941" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22366863" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289941" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Palette&#9;" />
@@ -261,27 +396,64 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/1.8.3/serenity-core-1.8.3.jar!/net/thucydides/core/steps/StepFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="145">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CountriesSearchSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/CountryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/CountryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CountriesSearchSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serenityrest.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serenity.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="17" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/WeatherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/WeatherTestSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -345,7 +517,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

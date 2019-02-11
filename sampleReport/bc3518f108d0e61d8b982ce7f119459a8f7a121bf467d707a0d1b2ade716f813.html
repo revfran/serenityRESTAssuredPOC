@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Verify that we can find india country using the code IN</title>
+    <title>Test search by zip code body</title>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -55,7 +55,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > Verify that we can find india country using the code IN
+        > Test search by zip code body
         </span>
         </div>
         <div class="rightbg"></div>
@@ -73,7 +73,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-02-2019 21:37</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-02-2019 00:17</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -88,7 +88,7 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Country Test</span>
+                                    <span class="story-header-title">Weather Test</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
@@ -109,7 +109,7 @@
                             <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
                                     <span class="success-color">
-                                    Verify that we can find india country using the code IN
+                                    Test search by zip code body
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -145,51 +145,24 @@
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
-                               style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
-                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
+                            <span style="margin-left: 20px; margin-right: 5px;"
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
-                               style="display:block;">
                             <span class="top-level-step">
-                                I try to search the country by 'IN' code
-                            </span>
-                            </a>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.31s</span></td>
-                </tr>
-                    <tr>
-                    <td colspan="5">
-                    <table id="stepSection0" style="display:none; width:100%">
-
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                GET http://services.groupkt.com/country/get/iso2code/IN
+                                GET http://api.openweathermap.org/data/2.5/weather?zip=94040&amp;APPID=b70cf56c6c37e1cecb9dce7af937259c
                             </span>
 
                                 <span class="rest-query">
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
-                            data-target="#restModal-2">
+                            data-target="#restModal-1">
                         REST Query
                     </button>
                 </span>
                 <!-- Modal -->
-                <div class="modal fade" id="restModal-2" tabindex="-1" role="dialog"
+                <div class="modal fade" id="restModal-1" tabindex="-1" role="dialog"
                      aria-labelledby="restModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -198,7 +171,7 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="restModalLabel">
-                                GET http://services.groupkt.com/country/get/iso2code/IN
+                                GET http://api.openweathermap.org/data/2.5/weather?zip=94040&amp;APPID=b70cf56c6c37e1cecb9dce7af937259c
                                 </h4>
                             </div>
                             <div class="modal-body">
@@ -207,9 +180,9 @@
                                     <h5>Request Headers</h5>
                                     <pre>Accept=*/*</pre>
                                     <h5>Response Headers</h5>
-                                    <pre>Date: Sun, 10 Feb 2019 21:37:38 GMT<br>Server: Apache/2.4.25 (Debian)<br>X-Content-Type-Options: nosniff<br>X-XSS-Protection: 1; mode=block<br>Cache-Control: no-cache, no-store, max-age=0, must-revalidate<br>Pragma: no-cache<br>Expires: 0<br>X-Frame-Options: DENY<br>Keep-Alive: timeout=5, max=100<br>Connection: Keep-Alive<br>Transfer-Encoding: chunked<br>Content-Type: application/json;charset=UTF-8</pre>
+                                    <pre>Server: openresty<br>Date: Mon, 11 Feb 2019 00:17:55 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 472<br>Connection: keep-alive<br>X-Cache-Key: /data/2.5/weather?APPID=b70cf56c6c37e1cecb9dce7af937259c&amp;zip=94040<br>Access-Control-Allow-Origin: *<br>Access-Control-Allow-Credentials: true<br>Access-Control-Allow-Methods: GET, POST</pre>
                                 <h5>Response Body</h5>
-                                    <pre>{<br>    &quot;RestResponse&quot;: {<br>        &quot;messages&quot;: [<br>            &quot;Country found matching code [IN].&quot;<br>        ],<br>        &quot;result&quot;: {<br>            &quot;name&quot;: &quot;India&quot;,<br>            &quot;alpha2_code&quot;: &quot;IN&quot;,<br>            &quot;alpha3_code&quot;: &quot;IND&quot;<br>        }<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;coord&quot;: {<br>        &quot;lon&quot;: -122.08,<br>        &quot;lat&quot;: 37.39<br>    },<br>    &quot;weather&quot;: [<br>        {<br>            &quot;id&quot;: 803,<br>            &quot;main&quot;: &quot;Clouds&quot;,<br>            &quot;description&quot;: &quot;broken clouds&quot;,<br>            &quot;icon&quot;: &quot;04n&quot;<br>        }<br>    ],<br>    &quot;base&quot;: &quot;stations&quot;,<br>    &quot;main&quot;: {<br>        &quot;temp&quot;: 283.51,<br>        &quot;pressure&quot;: 1018,<br>        &quot;humidity&quot;: 56,<br>        &quot;temp_min&quot;: 282.15,<br>        &quot;temp_max&quot;: 284.85<br>    },<br>    &quot;visibility&quot;: 16093,<br>    &quot;wind&quot;: {<br>        &quot;speed&quot;: 6.7,<br>        &quot;deg&quot;: 320,<br>        &quot;gust&quot;: 10.8<br>    },<br>    &quot;clouds&quot;: {<br>        &quot;all&quot;: 75<br>    },<br>    &quot;dt&quot;: 1549843200,<br>    &quot;sys&quot;: {<br>        &quot;type&quot;: 1,<br>        &quot;id&quot;: 5845,<br>        &quot;message&quot;: 0.0044,<br>        &quot;country&quot;: &quot;US&quot;,<br>        &quot;sunrise&quot;: 1549897322,<br>        &quot;sunset&quot;: 1549935813<br>    },<br>    &quot;id&quot;: 420006353,<br>    &quot;name&quot;: &quot;Mountain View&quot;,<br>    &quot;cod&quot;: 200<br>}</pre>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -223,51 +196,13 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-
-                    </table>
-                    </td>
-                    <tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">
-                                I check if search returns a 200 code
-                            </span>
-
-                        </div>
-                    </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        <a name="2"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">
-                                I check that response contains 'India' country
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.05s</span></td>
+                    <td width="100"><span class="top-level-step">0.01s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                     <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.38s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>10.26s</em></span></td>
                 </tr>
 
             </table>
